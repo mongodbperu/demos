@@ -1,5 +1,4 @@
-#! /usr/bin/python
-# -*- coding: UTF-8-*-
+# -*- coding: utf-8 -*-
 import datetime
 from django.db import models
 from django.contrib.auth.models import *

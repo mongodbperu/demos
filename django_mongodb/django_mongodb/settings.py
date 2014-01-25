@@ -1,5 +1,4 @@
-#! /usr/bin/python
-# -*- coding: UTF-8 -*-
+# -*- coding: utf-8 -*-
 import sys, os
 from django.core.context_processors import request
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
