@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 import os
-import sys
-from django.core.context_processors import request
 
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))

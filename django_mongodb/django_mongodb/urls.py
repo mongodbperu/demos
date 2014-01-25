@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.conf import settings
-from django.conf.urls import patterns, include, url
-from django.contrib import admin
+from django.conf.urls import patterns, url
 
 urlpatterns = patterns('',
     url(r'^$', 'frontend.views.inicio', name='inicio'),

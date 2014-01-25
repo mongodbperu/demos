@@ -3,10 +3,7 @@ from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.http import *
 from django.views.decorators.csrf import csrf_exempt
-from django.contrib.auth import authenticate
 from django.contrib.auth.models import *
-import datetime
-from django.contrib.auth import login, logout
 from django.contrib import messages
 from frontend.models import *
 from django.core.urlresolvers import reverse
