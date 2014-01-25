@@ -1,19 +1,18 @@
 # -*- coding: utf-8 -*-
-import sys, os
+import os
+import sys
 from django.core.context_processors import request
+
+
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
-RAIZ_URL            = "http://localhost:8000"
+RAIZ_URL = "http://localhost:8000"
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
-
-
-
 MANAGERS = ADMINS
-
 DATABASES = {
     'default': {
         'ENGINE': 'django_mongodb_engine',
@@ -66,7 +65,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = RAIZ_URL+'/static/'
+STATIC_URL = RAIZ_URL + '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -133,7 +132,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     #'django.contrib.sites',
     'django.contrib.messages',
-    'django.contrib.staticfiles',"djangotoolbox",
+    'django.contrib.staticfiles',
+    "djangotoolbox",
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
