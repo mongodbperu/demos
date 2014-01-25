@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 from django.conf import settings
 from django.conf.urls import patterns, include, url
-# Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 
 urlpatterns = patterns('',
-    # Examples:
     url(r'^$', 'frontend.views.inicio', name='inicio'),
     url(r'^ingresar/$', 'frontend.views.agregar_nueva_persona', name='ingreso'),
     # url(r'^django_mongodb/', include('django_mongodb.foo.urls')),

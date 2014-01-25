@@ -6,10 +6,6 @@ import hashlib
 import datetime
 
 from random import randint
-"""
-from libs.encriptacion import *
-get_identificador()
-"""
 
 
 def get_identificador():
