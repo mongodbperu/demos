@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-
-__author__ = 'carlucho'
-
 import hashlib
 import datetime
 
