@@ -1,1 +1,37 @@
 {% extends 'base_template.html' %}
+{% block contenido_pagina %}
+    <div class="jumbotron">
+        <h1>Hola, Comunidad</h1>
+        <p>En este ejemplo encontrarán la integración de varias herramientas como: bootstrap, django
+        mongodb, mongoengine</p>
+
+    </div>
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <strong>consultas de Persona</strong>
+
+            </div>
+            <div class="panel-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {% for item in listado %}
+                        <tr>
+                            <td>{{ item.nombre }}</td>
+                            <td>{{ item.apellido}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div><!--/row-->
+{% endblock %}

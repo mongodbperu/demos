@@ -8,6 +8,7 @@ from django.contrib import admin
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'frontend.views.inicio', name='inicio'),
+    url(r'^ingresar/$', 'frontend.views.agregar_nueva_persona', name='ingreso'),
     # url(r'^django_mongodb/', include('django_mongodb.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
