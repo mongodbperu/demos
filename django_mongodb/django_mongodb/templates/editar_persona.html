@@ -1,0 +1,37 @@
+{% extends 'base_template.html' %}
+{% block contenido_pagina %}
+
+
+    <div class="col-sm-12">
+
+        {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{% if message.tags == "error" %}danger{% else %}{% if message.tags %}{{ message.tags }}{% endif %}{% endif %}">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>{% if message.tags == "error" %}Ups! {% else %}Felicidades{% endif %}</strong> {{ message }}.
+            </div>
+        {% endfor %}
+        {% endif %}
+        <form action="{% url editar_persona persona.id %}" method="POST">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <strong>Modificar datos de persona {{ persona.nombre }}</strong>
+
+                </div>
+                <div class="panel-body">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        {{ formulario }}
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-4 col-sm-offset-7">
+                            <input type="submit" class="btn btn-primary" value="Ingresar" />
+                            <a href="{% url inicio %}" class="btn btn-default">Cancelar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
