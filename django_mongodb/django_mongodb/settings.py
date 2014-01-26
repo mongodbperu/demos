@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 import os
 
+#EL PATH COMPLETO DE LA RAIZ DEL PROYECTO
+"""
+mongodbengine
+django 1.4
+"""
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 RAIZ_URL = "http://localhost:8000"
@@ -31,7 +36,7 @@ TIME_ZONE = 'America/Guayaquil'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
 SITE_ID = 1
 
@@ -138,6 +143,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
 
 )
+
+
 AUTH_USER_MODEL = 'mongo_auth.MongoUser'
 MONGOENGINE_USER_DOCUMENT = 'mongoengine.django.auth.User'
 
@@ -170,6 +177,7 @@ LOGGING = {
     }
 }
 
+# configuracion de la base de datos mongodb
 SESSION_ENGINE = 'mongoengine.django.sessions'
 SESSION_SERIALIZER = 'mongoengine.django.sessions.BSONSerializer'
 

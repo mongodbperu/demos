@@ -5,7 +5,10 @@ from django.conf.urls import patterns, url
 urlpatterns = patterns('',
     url(r'^$', 'frontend.views.inicio', name='inicio'),
     url(r'^ingresar/$', 'frontend.views.agregar_nueva_persona', name='ingreso'),
+    url(r'^modificarPersona/(?P<id>[^/]+)/$', 'frontend.views.editar_persona', name='editar_persona'),
     # url(r'^django_mongodb/', include('django_mongodb.foo.urls')),
+
+
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
