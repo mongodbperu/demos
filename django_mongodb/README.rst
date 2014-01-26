@@ -7,8 +7,8 @@ Enlaces de interés para la instalación de MongoDB y Django
 
 
 - Instalación de MongoDB en MacOS:
-   http://es.docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/
-   http://www.mkyong.com/mongodb/how-to-install-mongodb-on-mac-os-x/
+   - http://es.docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/
+   - http://www.mkyong.com/mongodb/how-to-install-mongodb-on-mac-os-x/
 - Robomongo: http://robomongo.org/
 
 - Requerimientos::
